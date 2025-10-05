@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LudiMove - Smart Rides. Simple Moves.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>LudiMove</h2>
+                <span class="nav-tagline">Smart Rides. Simple Moves.</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#booking" class="nav-link">Book Ride</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Homepage -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Smart Rides. Simple Moves.</h1>
+                <p class="hero-subtitle">Helping students and locals move smarter, cheaper, and easier across Cape Town</p>
+                <button class="btn btn--primary btn--lg book-ride-btn">Book a Ride 🚗</button>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">20%</span>
+                        <span class="stat-label">Student Discount</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Available</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">R10</span>
+                        <span class="stat-label">Base Fare</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-car">🚗</div>
+                <div class="hero-route"></div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-section">
+            <div class="container">
+                <div class="about-header">
+                    <h2>Meet the LudiMove Team</h2>
+                    <p>LudiMove was founded with a simple mission: make transportation accessible and affordable for Cape Town's student community. Our founders combine local knowledge, technical expertise, and a passion for helping students succeed.</p>
+                </div>
+                <div class="founders-grid">
+                    <div class="founder-card">
+                        <div class="founder-image">
+                            <div class="driver-avatar">👨🏾‍💼</div>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Ntobeko Ludidi</h3>
+                            <p class="founder-title">Co-Founder & Driver</p>
+                            <p class="founder-description">With years of local Cape Town knowledge and a passion for student success, Ntobeko provides reliable rides in his trusted Hyundai i20. Whether you need a campus ride, moving help, or safe late-night transport, Ntobeko is here for you.</p>
+                            <div class="founder-details">
+                                <span class="detail-item">🚗 Hyundai i20</span>
+                                <span class="detail-item">⭐ 4.9 Rating</span>
+                                <span class="detail-item">🛡️ Verified Driver</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="founder-card">
+                        <div class="founder-image">
+                            <img src="Me in tuxedo.jpg" alt="Bahle Ludidi" class="founder-photo">
+                        </div>
+                        <div class="founder-info">
+                            <h3>Bahle Ludidi</h3>
+                            <p class="founder-title">Co-Founder, Tech Lead & Developer</p>
+                            <p class="founder-description">The technical mastermind behind LudiMove's smart features and innovative platform. Bahle developed our fare calculator, route optimization, and AI assistant to make student transportation seamless and affordable.</p>
+                            <div class="founder-details">
+                                <span class="detail-item">💻 Full-Stack Developer</span>
+                                <span class="detail-item">🤖 AI Integration</span>
+                                <span class="detail-item">📱 App Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services Summary -->
+        <div class="services-summary">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-service="student">
+                        <div class="service-icon">🎓</div>
+                        <h3>Student Moves</h3>
+                        <p>Affordable rides for students between campuses, residences, and popular spots around Cape Town</p>
+                        <ul class="service-features">
+                            <li>20% student discount</li>
+                            <li>Campus pickup zones</li>
+                            <li>Late night service</li>
+                        </ul>
+                        <div class="service-price">From R10 + R6.50/km</div>
+                    </div>
+                    <div class="service-card" data-service="goods">
+                        <div class="service-icon">📦</div>
+                        <h3>Light Goods Delivery</h3>
+                        <p>Safe transport for parcels, textbooks, groceries and small items across the Western Cape</p>
+                        <ul class="service-features">
+                            <li>Door-to-door service</li>
+                            <li>Same-day delivery</li>
+                            <li>Package tracking</li>
+                        </ul>
+                        <div class="service-price">From R15 + R8/km</div>
+                    </div>
+                    <div class="service-card" data-service="personal">
+                        <div class="service-icon">🚗</div>
+                        <h3>Personal Rides</h3>
+                        <p>Comfortable private transport for individuals and small groups anywhere in Cape Town</p>
+                        <ul class="service-features">
+                            <li>Airport transfers</li>
+                            <li>Event transport</li>
+                            <li>Flexible scheduling</li>
+                        </ul>
+                        <div class="service-price">From R12 + R7/km</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="why-choose-us">
+            <div class="container">
+                <h2 class="section-title">Why Choose LudiMove?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <div class="benefit-icon">💰</div>
+                        <h3>Student-Friendly Pricing</h3>
+                        <p>20% discount for students with transparent, upfront pricing</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🗺️</div>
+                        <h3>Local Knowledge</h3>
+                        <p>Ntobeko knows Cape Town roads and student areas inside out</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Reliable & Safe</h3>
+                        <p>Clean Hyundai i20, verified driver, and real-time tracking</p>
+                    </div>
+                    <div class="benefit-item">
+                        <div class="benefit-icon">🔄</div>
+                        <h3>Flexible Service</h3>
+                        <p>Students, goods delivery, personal rides - we do it all</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials">
+            <div class="container">
+                <h2 class="section-title">What Students Say</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"LudiMove saved me so much money getting between Rondebosch and campus. Ntobeko is super reliable!"</p>
+                        <div class="testimonial-author">
+                            <strong>Sarah M.</strong>
+                            <span>UCT Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Perfect for late night rides back to res. Much cheaper than Uber and way more trustworthy."</p>
+                        <div class="testimonial-author">
+                            <strong>Mike K.</strong>
+                            <span>Stellenbosch Student</span>
+                        </div>
+                    </div>
+                    <div class="testimonial">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Used LudiMove to move my stuff to new accommodation. Great service and fair pricing!"</p>
+                        <div class="testimonial-author">
+                            <strong>Lisa P.</strong>
+                            <span>CPUT Student</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Contact -->
+        <div class="quick-contact">
+            <div class="container">
+                <h2 class="section-title">Get in Touch</h2>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/27XXXXXXXXX?text=Hi! I'd like to book a ride with LudiMove" class="contact-btn whatsapp" target="_blank">
+                        <span class="contact-icon">📱</span>
+                        <div>
+                            <strong>WhatsApp</strong>
+                            <span>Quick booking</span>
+                        </div>
+                    </a>
+                    <a href="tel:+27XXXXXXXXX" class="contact-btn phone">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <strong>Call Now</strong>
+                            <span>+27 XX XXX XXXX</span>
+                        </div>
+                    </a>
+                    <a href="mailto:hello@ludimove.co.za" class="contact-btn email">
+                        <span class="contact-icon">✉️</span>
+                        <div>
+                            <strong>Email</strong>
+                            <span>hello@ludimove.co.za</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Page -->
+    <section id="services" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Services</h1>
+                <p>Comprehensive transportation solutions for Cape Town students and residents</p>
+            </div>
+            <div class="detailed-services">
+                <!-- Service details will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Page -->
+    <section id="pricing" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Smart Fare Estimator</h1>
+                <p>Get transparent, upfront pricing for your journey</p>
+            </div>
+            
+            <!-- Fare Calculator -->
+            <div class="fare-calculator">
+                <div class="calculator-form">
+                    <div class="input-group">
+                        <label for="pickup">Pickup Location</label>
+                        <select id="pickup" class="form-control">
+                            <option value="">Select pickup location</option>
+                            <option value="UCT Upper Campus">UCT Upper Campus</option>
+                            <option value="UCT Residences">UCT Residences</option>
+                            <option value="Stellenbosch University">Stellenbosch University</option>
+                            <option value="Rondebosch Station">Rondebosch Station</option>
+                            <option value="Claremont">Claremont</option>
+                            <option value="Observatory">Observatory</option>
+                            <option value="V&A Waterfront">V&A Waterfront</option>
+                            <option value="Cape Town International Airport">Cape Town International Airport</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="dropoff">Drop-off Location</label>
+                        <select id="dropoff" class="form-control">
+                            <option value="">Select drop-off location</option>
+                            <option value="UCT Upper Campus">UCT Upper Campus</option>
+                            <option value="UCT Residences">UCT Residences</option>
+                            <option value="Stellenbosch University">Stellenbosch University</option>
+                            <option value="Rondebosch Station">Rondebosch Station</option>
+                            <option value="Claremont">Claremont</option>
+                            <option value="Observatory">Observatory</option>
+                            <option value="V&A Waterfront">V&A Waterfront</option>
+                            <option value="Cape Town International Airport">Cape Town International Airport</option>
+                        </select>
+                    </div>
+                    <div class="student-toggle">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="studentDiscount">
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-label">I'm a student (20% off)</span>
+                        </label>
+                    </div>
+                    <button id="calculateFare" class="btn btn--primary btn--full-width">Calculate Fare</button>
+                </div>
+                
+                <div class="fare-results" id="fareResults">
+                    <div class="result-item">
+                        <span class="result-label">Distance:</span>
+                        <span class="result-value" id="distance">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Estimated Time:</span>
+                        <span class="result-value" id="estimatedTime">-</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Regular Fare:</span>
+                        <span class="result-value" id="regularFare">-</span>
+                    </div>
+                    <div class="result-item student-fare">
+                        <span class="result-label">Student Fare:</span>
+                        <span class="result-value" id="studentFare">-</span>
+                    </div>
+                    <button id="bookThisRide" class="btn btn--secondary btn--full-width" style="display: none;">Book This Ride</button>
+                </div>
+            </div>
+
+            <!-- Route Visualizer -->
+            <div class="route-visualizer">
+                <h3>Route Preview</h3>
+                <div class="mock-map" id="routeMap">
+                    <div class="map-placeholder">
+                        <div class="map-icon">🗺️</div>
+                        <p>Select pickup and drop-off locations to view route</p>
+                    </div>
+                </div>
+                <div class="route-actions">
+                    <button id="compareUber" class="btn btn--outline" style="display: none;">Compare with Uber</button>
+                </div>
+            </div>
+
+            <!-- Popular Routes -->
+            <div class="popular-routes">
+                <h3>Popular Student Routes</h3>
+                <div class="routes-grid" id="popularRoutes">
+                    <!-- Popular routes will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Page -->
+    <section id="booking" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Book Your Ride</h1>
+                <p>Fill in your details and we'll get you moving</p>
+            </div>
+            
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">Full Name</label>
+                        <input type="text" id="fullName" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber" class="form-label">Phone Number</label>
+                        <input type="tel" id="phoneNumber" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bookingPickup" class="form-label">Pickup Address</label>
+                        <input type="text" id="bookingPickup" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingDropoff" class="form-label">Drop-off Address</label>
+                        <input type="text" id="bookingDropoff" class="form-control" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="serviceType" class="form-label">Service Type</label>
+                        <select id="serviceType" class="form-control" required>
+                            <option value="">Select service type</option>
+                            <option value="student">Student Moves</option>
+                            <option value="goods">Light Goods Delivery</option>
+                            <option value="personal">Personal Rides</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingDate" class="form-label">Preferred Date & Time</label>
+                        <input type="text" id="bookingDate" class="form-control" placeholder="e.g., Tomorrow 2:30 PM" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <div class="student-status">
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="isStudent">
+                            <span class="toggle-slider"></span>
+                            <span class="toggle-label">I'm a student (20% discount)</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="specialRequirements" class="form-label">Special Requirements (Optional)</label>
+                    <textarea id="specialRequirements" class="form-control" rows="3" placeholder="Any special instructions or requirements..."></textarea>
+                </div>
+                
+                <div class="booking-summary" id="bookingSummary" style="display: none;">
+                    <h4>Booking Summary</h4>
+                    <div class="summary-details">
+                        <div class="summary-item">
+                            <span>Estimated Distance:</span>
+                            <span id="summaryDistance">-</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Estimated Fare:</span>
+                            <span id="summaryFare">-</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--lg btn--full-width">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Contact Us</h1>
+                <p>Get in touch with the LudiMove team</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="team-info">
+                    <div class="team-grid">
+                        <div class="team-member">
+                            <div class="member-avatar-large">👨🏾‍💼</div>
+                            <h3>Ntobeko Ludidi</h3>
+                            <p class="member-title">Co-Founder & Driver</p>
+                            <div class="member-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon">🚗</span>
+                                    <span>Hyundai i20</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">⭐</span>
+                                    <span>4.9 Rating</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">🕒</span>
+                                    <span>6:00 AM - 11:00 PM</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-member">
+                            <div class="member-photo-large">
+                                <img src="Me in tuxedo.jpg" alt="Bahle Ludidi">
+                            </div>
+                            <h3>Bahle Ludidi</h3>
+                            <p class="member-title">Co-Founder & Tech Lead</p>
+                            <div class="member-details">
+                                <div class="detail-item">
+                                    <span class="detail-icon">💻</span>
+                                    <span>Full-Stack Developer</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">🤖</span>
+                                    <span>AI Integration</span>
+                                </div>
+                                <div class="detail-item">
+                                    <span class="detail-icon">📱</span>
+                                    <span>App Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="https://wa.me/27XXXXXXXXX" class="contact-method whatsapp" target="_blank">
+                            <div class="method-icon">📱</div>
+                            <div class="method-details">
+                                <strong>WhatsApp</strong>
+                                <span>Instant booking & support</span>
+                            </div>
+                        </a>
+                        <a href="tel:+27XXXXXXXXX" class="contact-method phone">
+                            <div class="method-icon">📞</div>
+                            <div class="method-details">
+                                <strong>Phone</strong>
+                                <span>+27 XX XXX XXXX</span>
+                            </div>
+                        </a>
+                        <a href="mailto:hello@ludimove.co.za" class="contact-method email">
+                            <div class="method-icon">✉️</div>
+                            <div class="method-details">
+                                <strong>Email</strong>
+                                <span>hello@ludimove.co.za</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="service-areas">
+                    <h3>Operating Areas</h3>
+                    <p>We proudly serve students and residents across these Cape Town areas:</p>
+                    <div class="areas-grid">
+                        <div class="area-item">🎓 Rondebosch</div>
+                        <div class="area-item">🎓 Claremont</div>
+                        <div class="area-item">🎓 Observatory</div>
+                        <div class="area-item">🎓 Woodstock</div>
+                        <div class="area-item">🏖️ Sea Point</div>
+                        <div class="area-item">🏖️ Green Point</div>
+                        <div class="area-item">🌊 V&A Waterfront</div>
+                        <div class="area-item">🏙️ City Bowl</div>
+                        <div class="area-item">🍷 Stellenbosch</div>
+                        <div class="area-item">🏘️ Bellville</div>
+                        <div class="area-item">🏘️ Parow</div>
+                        <div class="area-item">🏘️ Goodwood</div>
+                        <div class="area-item">🎓 UCT Campuses</div>
+                        <div class="area-item">✈️ CPT Airport</div>
+                    </div>
+                    
+                    <div class="coverage-map">
+                        <div class="map-container">
+                            <div class="coverage-visual">
+                                <div class="coverage-center">📍</div>
+                                <div class="coverage-circle"></div>
+                                <div class="coverage-label">Cape Town Coverage Area</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Chatbot Widget -->
+    <div class="chatbot-widget" id="chatbotWidget">
+        <div class="chat-toggle" id="chatToggle">
+            <span class="chat-icon">💬</span>
+            <span class="chat-notification" id="chatNotification">1</span>
+        </div>
+        
+        <div class="chat-window" id="chatWindow" style="display: none;">
+            <div class="chat-header">
+                <div class="chat-avatar">🤖</div>
+                <div class="chat-info">
+                    <strong>Ludi Assistant</strong>
+                    <span>Your ride buddy</span>
+                </div>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot-message">
+                    <div class="message-avatar">🤖</div>
+                    <div class="message-content">
+                        <p>Hey there 👋 I'm Ludi, your student ride buddy! How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="chat-quick-actions">
+                <button class="quick-action" data-action="fare">💰 Fare Estimate</button>
+                <button class="quick-action" data-action="booking">📝 Book Ride</button>
+                <button class="quick-action" data-action="safety">🛡️ Safety Info</button>
+                <button class="quick-action" data-action="areas">📍 Service Areas</button>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="chatSend">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
